@@ -1,0 +1,1 @@
+fetch('https://www.google.com/tia/tia.png').then(res=>res.blob()).then(blob=>require('fs').writeFileSync('tia.png', Buffer(blob)))

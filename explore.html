@@ -1,0 +1,65 @@
+<head>
+    <title>Explore | Navigation button in ecommerce website</title><meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/tailwind.min.css">
+    <link rel="stylesheet" href="../css/page.css"><link rel="stylesheet" href="../css/all.min.css">
+	<script src="../js/utils.js"></script>
+    <script src="../js/index.js"></script><script src="../js/ripples.js"></script><script src="../js/rellax.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>.stroked {
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke: 2px black;
+            }</style>
+
+    
+
+  </head>
+  <body>
+    
+    <nav class="backdrop-filter backdrop-blur no-hover no-focus -slide-y tooltip text-center w-full text-xs show bg-white relative" style="--tw-bg-opacity:calc(var(--bg-opacity-pad) + 0.5); z-index:2"><button class="relative ripple text-current relative p-3 border-r-2 border-blue-400" onclick="objWalk(this, ['pN','lEC','cL']).add('show')"><i class="fa fa-plus mr-2"></i>explore</button>
+<div class="top-0 __grid__ no-focus-within no-hover no-focus -slide-y tooltip absolute [&>*]:inline-block vh-full w-full"><div class="align-top h-full w-1/2"><div class="h-1/2 [&>*]:inline-block"><div class="align-top h-full w-1/2">
+    <div class="h-1/2"><div class="sm:w-1/3 w-full inline-block h-full">
+    <div class="relative text-center h-1/2 bg-gray-700 text-white"><button class="text-current absolute inset-0">Home</button></div><div class="relative text-center h-1/2 bg-blue-300"><button class="ripple text-current absolute inset-0" onclick="objWalk(this, [{7:'pN'},'cL']).remove('show')">close</button></div>
+</div><div class="sm:inline-block hidden h-full w-2/3 bg-gray-100"></div></div><div class="h-1/2 bg-yellow-100"></div>
+</div><div class="h-full w-1/2 bg-blue-100"></div></div><div class="h-1/2 bg-gray-100"></div></div><div class="relative w-1/2 h-full"><div class="no-hover no-focus tooltip slide bg-red-200 absolute inset-0 show" style="--x: 0%;"></div><div style="background-image: url(img/canyon.png)" class="absolute inset-0"></div><div class="relative h-full w-full" style="background: #00000095;"></div></div></div></nav><div class="text-center mt-32 relative">
+    <div class="text-left relative inline-block rounded-2xl">
+    <div class="absolute p-8 rounded-tl-2xl border-t border-l border-black top-0 left-0"></div>
+    <div class="rounded-inherit overflow-hidden absolute inset-1"><div class="left-1/3 bg-gradient-to-r from-transparent via-yellow-500 to-tansparent h-full bottom-1/4 w-1/2 absolute animate-spin" style="transform-origin: bottom; animation-duration: 3s;"></div></div>
+<div class="absolute p-8 rounded-br-2xl bottom-0 right-0 border-b border-r border-black"></div><div class="m-1.5 relative inline-block p-4 h-40 w-40 bg-white rounded-xl">Some text here for context
+</div>
+</div>
+</div>
+<h1 class="text-center stroked relative precise-typo font-fredoka" style="font-size: clamp(5rem, 5rem + 0vw, 5rem);">Sneak-walk</h1>
+
+    
+<script>DOMLoaded=0, debug = ~w.location.search.search('debug');
+
+function tagify(el, tag) {
+  typeof tag!=='string'&&(tag='span'),
+  el.innerHTML = el.textContent.split('').map(e=>`<${tag}>${e}</${tag}>`).join('')
+}
+
+w.onbeforeunload=_=>'Return this string to prompt before leaving page';
+  /*use heap as a global array of nodes that are modified and altered as an alternative to variables for the same purpose */
+let heap = [];
+  w.addEventListener('DOMContentLoaded', (o, main, menu, vars=[], rellax)=>{
+    DOMLoaded = true,
+    animations.addRippleAnimations()
+  }),
+  w.onscroll = (ev, ratio)=>{
+    if(DOMLoaded) {
+      ratio = onScroll(w),
+      stack[0].classList[cLs(ratio < 1)]('text-white')
+    }
+  },
+    w.omousemove=(e, sL, pXY=[], scrolled=[])=>{
+      if (!e) var e = window.event;
+      scrolled = ['Left', 'Top'].map(mv=>d.body.scroll+mv + d.body.scroll+mv);
+      if (e.pageX || e.pageY) 	{
+        pxY = [e.pageX, e.pageY]
+      }
+      else if (e.clientX || e.clientY) 	{
+        pXY = [e.clientX + scrolled[0], e.clientY + scrolled[1]]
+      }
+    }
+</script>
+  
+</body>
