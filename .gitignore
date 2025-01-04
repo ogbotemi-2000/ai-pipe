@@ -2,6 +2,7 @@
 *.txt
 config.json
 ignore
+run.js
 
 # Logs
 logs

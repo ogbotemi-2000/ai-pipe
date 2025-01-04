@@ -24,7 +24,7 @@ module.exports = async function(request, response) {
     })
   })
   .catch(err=>{
-      console.log('::ERROR::', err)
+      response.json({error: 'Error: Unable to reach remote server due to a network disconnect'})
   })
 }
 
