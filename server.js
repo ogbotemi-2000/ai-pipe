@@ -15,7 +15,9 @@ let http   = require('http'),
     file   = path.join(require('./utils/rootDir')(__dirname), './sql_ui_config.json'),
     config = fs.existsSync(file)&&require(file)||{...process.env},
     mime   = require('mime-types'),
-    { urlParts, parseMultipart } = require('./utils/utils');
+    scktio = require('socket.io'),
+    { urlParts, parseMultipart } = require('./utils/utils'),
+    server;
     
     config.PORT||=3000;
 
@@ -48,7 +50,7 @@ let http   = require('http'),
     },
     cache  = {}; /** to store the strings of data read from files */
 
-http.createServer((req, res, url, parts, data, verb)=>{
+(server = http.createServer((req, res, url, parts, data, verb)=>{
   ({ url } = parts =  urlParts(req.url)),
   
   res.json=obj=>res.end(JSON.stringify(obj)), // for Vercel functions
@@ -76,6 +78,33 @@ http.createServer((req, res, url, parts, data, verb)=>{
     // console.error(str='::ERROR:: '+err, [url])
     res.end(str)
   })
-}).listen(config.PORT, _=>{
+})).listen(config.PORT, _=>{
   console.log(`Server listening on PORT ${config.PORT}`)
+}),
+
+(io = scktio(server)).on('connection', socket=>{
+  /**socket for client */
+  socket.emit('data', { data: 'response for webpae'}),
+  socket.on('data', data=>console.log([data]))
+  
+  /**socket for Python microservice */
+  socket.emit('message', { data: 'response for microservice'}),
+  socket.on('message', data=>console.log([data]))
+
+  socket.on('disconnect', _=>{
+    console.log('DISCONNECT::WebSocket')
+  })
 })
+
+/** address: wss://localhost:8000 */
+// const WebSocket = require('ws');
+// const ws = new WebSocket('ws://localhost:8000');
+
+
+// ws.on('open', function open() {
+//   ws.send('something');
+// });
+
+// ws.on('message', function incoming(message) {
+//   console.log('received: %s', message);
+// });

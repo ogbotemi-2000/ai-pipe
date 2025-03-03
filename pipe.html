@@ -1,0 +1,263 @@
+<!DOCTYPE HTML><html><head>
+    <title>Explore | Navigation button in ecommerce website</title><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/page.css"><link rel="stylesheet" href="css/all.min.css">
+	<script src="js/utils.js"></script>
+  <script src="js/ripples.js"></script><script src="../js/rellax.min.js"></script>
+<style>@keyframes x-full {
+0% {
+    transform: translate3d(-25%, 1px, 1px);
+}
+100% {
+    transform: translate3d(0%, 1px, 1px);
+}
+}
+.bg-near-black {
+    background: #282828;
+}
+.stroked {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px currentColor;
+            }
+.__grid .item._x {
+  --x: -200%;
+  --y: 0%;
+}
+.__grid .item._y {
+  --y: -200%;
+  --x: 0%;
+}
+    
+.__grid .item {
+  opacity: 0;
+  transform: translate3d(var(--x), var(--y), 0px);
+  transition: ease-in transform 0.3s, ease-in opacity 0.3s 0.15s;
+}
+.__grid.show .item {
+  --time: 0.35s;
+  transition: cubic-bezier(0.87, 0, 0.13, 1) transform var(--time) calc(var(--time) * var(--index));
+}
+.__grid.show .item {
+  opacity: 1;
+  --x: 0%; --y:0%;
+}
+@media (min-width:640px) {
+    .sm\:right-unset {
+    right: unset;
+}
+}
+</style>
+
+    
+
+  </head>
+  <body class="text-white">
+<nav class="sm:text-left text-center p-2 top-0 left-0 right-0 absolute backdrop-filter backdrop-blur-sm text-xs" style="--tw-bg-opacity:calc(var(--bg-opacity-pad) + 0.1); z-index:2"><button class="border-l-2 relative ripple text-current relative p-3 border-r-2 border-blue-400" onclick="Abbr.to(this,['nES','cL']).add('show')"><i class="fa fa-plus mr-2"></i>resources, quick info, about, ...explore</button>
+<div class="bottom-0 top-0 __grid no-focus-within no-hover no-focus -slide-y tooltip absolute [&>*]:inline-block right-0 left-0" style="height:100vh;"><div class="z-1 relative align-top h-full w-1/2"><div class="z-1 relative h-1/2 [&>*]:inline-block"><div class="z-1 relative align-top h-full w-1/2"><div class="relative z-1 item h-1/2" style="--index: 0;"><div class="relative z-1 sm:w-1/3 w-full inline-block h-full"><div class="z-1 item _y relative text-center h-1/2 bg-gray-700 text-white" style="--index: 1;"><button class="text-current absolute inset-0">Home</button></div><div class="item _y relative text-center h-1/2 bg-blue-300" style="--index: 2;"><button class="ripple text-current absolute inset-0" onclick="Abbr.to(this, [{7:'pN'},'cL']).remove('show')">close</button></div></div><div class="item _x sm:inline-block hidden h-full w-2/3 bg-gray-200" style="--index: 3;"></div></div><div class="text-black item _y h-1/2 bg-yellow-100" style="--index: 4;"><a target="_blank" href="https://dev.to/challenges/brightdata" class="flex items-center justify-center flex-col word-break w-full h-full text-center text-sm"><span>built for the BrightData challenge<i class="ml-1 fa fa-external-link-alt"></i></span></a></div></div><div class="sm:p-5 text-black _x item h-full w-1/2 bg-blue-100" style="--index: 5;"><a target="_blank" href="https://www.kaggle.com/code/dmitryyemelyanov/word-vector-dimensionality-reduction-with-t-sne" class="flex items-center justify-center flex-col word-break w-full h-full sm:text-lg"><span>Embeddings Dimensionality reduction <i class="fa fa-external-link-alt"></i></span></a></div></div><div class="flex-col flex items-center justify-center _y item h-1/2" style="--index: 6;">
+    <div class="p-2 sm:p-5"><aside style="background: url(img/palette-light.png) center center / cover repeat;" class="inset-0 absolute duration-300 ease-out background-cover"><div class="rounded-inherit bg-gradient-to-br from-yellow-800 via-blue-900 to-red-800 absolute inset-0 duration-300 ease-out opacity-70 mix-blend-color-burn"></div>
+</aside><div class="relative">
+    <div class="[&>*]:align-middle [&>*]:inline-block text-blue-100 mb-3"><figure class="mr-2 pointer-events-none">
+<img src="img/postgreml.svg" class="w-10 m-auto p-0.5">
+</figure><h4 class="font-bookweb text-lg sm:text-xl">PostgresML</h4></div>
+<p class="text-white text-xs sm:text-sm leading-6">A PostgresSQL database that lets you directly execute powerful functions via extensions on your database entries for machine learning purposes</p>
+<a class="p-4 inline-block" target="_blank" href="https://postgresml.org/">check it out<i class="ml-2 fa fa-external-link-alt text-blue-200"></i></a></div></div>
+</div></div><div class="text-black p-5 bg-red-200 _x item w-1/2 h-full" style="--index: 7;">
+    <div class="text-base h-full flex items-center justify-center flex-col">
+    <a target="_blank" href="https://github.com/Yuan-ManX/ai-audio-datasets">Audio AI datasets to train you AI models on <i class="ml-1 fa fa-external-link-alt"></i></a>
+</div></div></div></nav>
+<main class="sm:px-5 overflow-hidden relative sm:justify-around [&>*]:inline-block sm:flex text-center [&>*]:text-left vh-full bg-cover pt-16 sm:pt-20" style="background-image:url(img/dane-deaner-unsplash.jpg)">
+
+<aside class="absolute inset-0 bg-black" style="--tw-bg-opacity:0.5"></aside><div class="h-56 relative inline-block"><aside class="float-right items-start [&>*]:p-1 inline-flex"><div class="h-9 flex-1 border border-current"></div><div class="h-10 flex-1 border border-current"></div><div class="h-5 flex-1 border border-current"></div><div class="h-12 flex-1 border border-current"></div><div class="h-8 flex-1 border border-current"></div><div class="h-9 flex-1 border border-current"></div>
+<div class="h-12 flex-1 border border-current"></div><div class="h-8 flex-1 border border-current"></div><div class="h-9 flex-1 border border-current bg-blue-300"></div>
+</aside><br>
+
+<h1 class="inline-block stroked relative precise-typo font-fredoka" style="font-size: clamp(3.5rem, 3.5rem + 4vw, 4rem); line-height:1">AI-pipe</h1><br>
+<aside class="rounded [&>*]:rounded-inherit items-end [&>*]:p-1 inline-flex"><div class="bg-blue-300 h-10 flex-1 border border-current"></div><div class="h-10 flex-1 border border-current"></div><div class="h-5 flex-1 border border-current"></div><div class="h-12 flex-1 border border-current"></div><div class="h-8 flex-1 border border-current"></div><div class="h-9 flex-1 border border-current"></div></aside><p class="w-72 text-sm">Background photo by <a href="https://unsplash.com/@danedeaner?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline">Dane Deaner<i class="ml-1 fa fa-external-link-alt"></i></a> on <a href="https://unsplash.com/photos/body-of-water--cXIhoWvBxo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline">Unsplash<i class="ml-1 fa fa-external-link-alt"></i></a></p>
+</div><br>    <div class="sm:h-56 sm:mx-8 w-52 h-52 sm:w-64 text-left relative inline-block rounded-2xl">
+    
+    <div class="rounded-inherit overflow-hidden absolute inset-1 sm:-bottom-2"><div class="left-1/4 bg-gradient-to-r from-transparent via-blue-200 to-tansparent h-full bottom-1/2 w-3/4 absolute animate-spin" style="transform-origin: bottom; animation-duration: 2s;"></div></div>
+<div class="justify-center flex-col flex h-full text-sm m-1.5 relative inline-block sm:p-3 p-4 rounded-xl bg-blue-300 text-black md:p-4">Scrape, cleanse and feed data to your AI models to generate <a href="javascript:void(0)" class="font-semibold">vector embeddings.</a><hr class="bulge-center border-0 p-px my-2">The embeddings are then stored in your database for use cases like similarity searches</div>
+</div>
+<br>
+<button class="sm:h-5/6 sm:mt-0 sm:mb-5 sm:w-auto w-4/5 hover:bg-blue-400 mt-5 ripple px-7 p-3 text-current relative text-base" style="--tw-bg-opacity: 0.3;" onclick="Abbr.to(this,['nES','cL']).add('show')"><i class="block w-full text-center">begin</i><i class="sm:inset-0 absolute -inset-2 [&>*]:p-2"><div class="absolute border-b border-r border-current top-0 left-0"></div><div class="absolute border-b border-l border-current top-0 right-0"></div><div class="absolute border-t border-r border-current bottom-0 left-0"></div><div class="absolute border-t border-l border-current bottom-0 right-0"></div></i></button><aside class="md:mx-2 mx-2 mb-5 md:mb-8 lg:mx-auto sm:mx-4 tooltip no-hover no-focus no-focus-within left-0 right-0 text-sm sm:mx-10 lg:w-5/6 backdrop-filter backdrop-blur-sm rounded-3xl p-4 px-3 sm:px-5 absolute bottom-0 bg-blue-200" style="--tw-bg-opacity:0.2; z-index:auto;"><div class="duration-300 rounded-inherit bg-gradient-to-r from-blue-900 via-blue-900 to-green-700 opacity-80 absolute inset-0 pointer-events-none sm:opacity-50">
+		<svg xmlns="http://www.w3.org/2000/svg" class="show absolute inset-0 rounded-inherit" width="100%" height="100%">
+		<filter id="noise" x="0" y="0">
+		<feTurbulence type="fractalNoise" baseFrequency="0.4" numOctaves="1" stitchTiles="stitch"></feTurbulence>
+		<feBlend mode="screen"></feBlend>
+		</filter>
+		<rect width="100%" height="100%" filter="url(#noise)" opacity="0.5"></rect>
+	</svg></div><main class="relative md:flex">
+<section class="lg:w-1/2 md:w-3/4 md:relative md:show md:mr-6 w-full sm:inline-block tooltip no-hover no-focus no-focus-within -slide-y show"><div class="mr-20"><button class="ripple relative hidden text-current border-gray-300 border-l p-3" onclick="let sec=Abbr.to(this,{2:'pN'}), cls=['absolute', 'show']; [].forEach.call(Abbr.to(sec, 'pN').children, (ch, b)=>{ b=ch===sec, Abbr.to(ch,'cL').replace(cls[+b], cls[+!b]) })">see the other side <i class="fa fa-arrow-right"></i></button><h2 class="mb-2 mr-3 inline-block text-lg">Scrape website data</h2></div>
+<div class="md:h-1/2 show bottom-0 tooltip no-hover no-focus no-focus-within -slide-y"><h3 class="text-base text-gray-300">Download HTML markup from a webpage</h3>
+
+<p class="p-3">Provide the URL to a webpage. Try Google search pages, dynamic webpage URLs, search results listing pages etc. Define scripts to capture data afterwards →</p><datalist id="protocol"><option value="http://">http://</option><option value="https://">https://</option></datalist>
+<form onsubmit="event.preventDefault(); let as = Abbr.to(this,[{2:'pN'},'lEC']), json={url: this.url.value, nodes:{}},
+  toggle=flag=>{ Abbr.to(as, {2:'fEC'}).style.setProperty('animation', flag?'1s ease-out infinite x-full':'none'), Abbr.to(as, {3:'lEC'}).disabled=flag }, err;
+  Abbr.to(this, ['pN','nES']).querySelectorAll('code').forEach((code,tx,a)=>{
+  a=tx='', page.asText(code, n=>Abbr.to(n,'tN')==='PRE'?tx+=Abbr.to(n,'tC')+' ':'')
+  tx=tx.replace(/^[^\s]+\s/, _a=>json.nodes[a=_a.trim()]=''), json.nodes[a]||=tx.trim()
+}), toggle(!0),
+console.log('::JSON::', json),
+fetch('api/schema', {
+  method: 'POST',
+  headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }, 
+  body: JSON.stringify(json)
+}).then(res=>res.json()).then(res=>{
+  ({ error:err } = res), console.log('::RES::', res);
+  if(err) return;
+  err||='No errors', defaults.innerHTML=Object.keys(page.data=res.data).map(e=>`<option value=${e}>${res.data[e].length} items</option>`).join('')
+}).catch(_err=>err = _err).finally(_=>(toggle(), window.out.textContent = err));" id="scrape"><input class="placeholder-gray-300 outline-none rounded-bl-xl border-l-2 border-current p-2 text-current bg-transparent border-b-2 border-dashed tracking-wide w-full" spellcheck="false" list="protocol" name="url" required="" placeholder="Enter the complete URL to a webpage">
+<button class="hidden" name="send">-></button>
+</form>
+</div><div class="w-full tooltip no-hover no-focus no-focus-within absolute bottom-0 -slide-y"><h3 class="text-base text-gray-300">Specify what to obtain from the markup</h3>
+<p>Use the templates below to target nodes to read for data when scraping or <button class="rounded-lg text-current border-2 border-dashed p-2.5 ripple relative" onclick="let lc=Abbr.to(this,['pN', 'nES', 'lEC']), cln=lc.cloneNode(!0), pres=cln.querySelectorAll('pre'); pres[0].textContent='node', pres[1].textContent='function(node) { /*condition to extract data goes here*/ }', lc.after(cln)">create yours</button></p>
+<main class="justify-center mt-1 flex-wrap flex [&>*]:inline-block [&>*]:relative [&>*]:p-1 -mx-3 sm:mx-0" spellcheck="false">
+<code><button class="-ml-2.5 tooltip px-2.5 rounded-full -m-1 hover:bg-blue-300 p-2 top-0 left-0 absolute text-current fa fa-trash" style="--tw-bg-opacity: 0.4; z-index:auto" onclick="Abbr.to(this,'pN').remove()"></button>
+<pre class="text-center text-lg text-red-200">img</pre>
+<button class="w-full block font-mono text-current rounded-b-lg p-2 hover:bg-blue-300 hover:text-black relative focus:bg-blue-300 focus:text-black">codex <i class="fa fa-caret-down"></i>
+<pre class="text-left overflow-scroll rounded-lg text-black bg-blue-300 left-0 h-auto tooltip absolute p-2 bottom-9" style="max-height:220px;"><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity)); color: rgba(0,0,0,var(--tw-text-opacity)); font-family: inherit; font-size: 1em;">function fxn(node, bool) {</span></div><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity));">/*"node" is passed as an </span></div><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity));">argument while "bool" isn't.</span></div><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity));">You're free to add and</span></div><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity));">use more
+*/<font color="rgba(0, 0, 0, 0)" face="inherit"><span style="font-size: 1em;"></span></font></span></div><span style="font-size: 13.3333px;">  /*only make edits from here</span><div><span style="font-size: 13.3333px;">  on for proper behaviour*/</span><br><div>  bool=node.tagName==="IMG"<div>  &&node.src;</div><div><br></div><div>  /*edits should end here</div><div>    unless you understand</div><div>    the <span style="background-color: rgba(147,197,253,var(--tw-bg-opacity)); color: rgba(0,0,0,var(--tw-text-opacity)); font-family: inherit; font-size: 1em;">code below</span></div><div>  */</div><div>  /*uses the plural of the </div><div>   nodeName as object key</div><div>   */</div><div>  bool&&((page.data||={})
+  ['imgs']||=[])</div><div>  .push(bool);</div><div><br></div><div>  /*moves over to the other</div><div>    scripts if false</div><div>   */</div><div>  return bool
+}</div></div></div></pre></button>
+<button class="block mt-1 px-3 text-sm ripple relative p-1.5 text-current rounded-b-lg border border-current border-dashed" onclick="let pres=Abbr.to(this,'pN').querySelectorAll('pre'), t=Abbr.to(this,'fC'), bool; pres.forEach(pre=>pre[((bool=t.data.trim()==='edit')?'set':'remove')+'Attribute']('contenteditable', '')), t.data=(bool?'done':'edit')+' '">edit <i class="fa fa-pen"></i></button></code>
+
+<code class="sm:mx-3">
+<button class="-ml-2.5 tooltip px-2.5 rounded-full -m-1 hover:bg-blue-300 p-2 top-0 left-0 absolute text-current fa fa-trash" style="--tw-bg-opacity: 0.4; z-index:auto" onclick="Abbr.to(this,'pN').remove()"></button><pre class="text-center text-lg text-red-200">audio </pre>
+<button class="block font-mono focus:text-black focus:bg-blue-300 w-full text-current rounded-b-lg p-2 hover:bg-blue-300 hover:text-black relative focus:bg-blue-300 focus:text-black">codex <i class="fa fa-caret-down"></i><pre class="-ml-4 text-left -left-full overflow-scroll rounded-lg text-black bg-blue-300 h-auto tooltip absolute p-2 bottom-8 overflow-scroll" style="max-height:220px;"><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity)); color: rgba(0,0,0,var(--tw-text-opacity)); font-family: inherit; font-size: 1em;">function fxn(node, bool) {</span></div><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity));">/*the template script for </span></div><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity));">"img" beside ← has some</span></div><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity));">comments left out here to</span></div><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity));">avoid </span><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity)); color: rgba(0,0,0,var(--tw-text-opacity)); font-family: inherit; font-size: 1em;">redundancy</span></div><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity));">*/<font color="rgba(0, 0, 0, 0)" face="inherit"><span style="font-size: 1em;"></span></font></span></div><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity));"><br></span></div><div>  /*only make edits from here
+  on for proper behaviour*/<br><div>  bool=node.tagName==="AUDIO"</div><div>  &&node.src;
+</div><div><br></div><div>  bool&&((page.data||={})
+    ['audios']||=[])
+  .push(bool);
+</div><div><br></div><div><div style="border-color: rgba(229,231,235,var(--tw-border-opacity)); --tw-border-opacity: 1; --tw-shadow: 0 0 #0000; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(254 245 210); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; font-size: 13.3333px;">  /*moves over to the other</div><div style="border-color: rgba(229,231,235,var(--tw-border-opacity)); --tw-border-opacity: 1; --tw-shadow: 0 0 #0000; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(254 245 210); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; font-size: 13.3333px;">    scripts if false</div><div style="border-color: rgba(229,231,235,var(--tw-border-opacity)); --tw-border-opacity: 1; --tw-shadow: 0 0 #0000; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(254 245 210); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; font-size: 13.3333px;">  */</div><div style="border-color: rgba(229,231,235,var(--tw-border-opacity)); --tw-border-opacity: 1; --tw-shadow: 0 0 #0000; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(254 245 210); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; font-size: 13.3333px;">  return bool</div></div><div>}</div></div></pre></button>
+<button class="mt-1 px-3 w-full text-sm ripple relative p-1.5 text-current rounded-b-lg border border-current border-dashed" onclick="let pres=Abbr.to(this,'pN').querySelectorAll('pre'), t=Abbr.to(this,'fC'), bool; pres.forEach(pre=>pre[((bool=t.data.trim()==='edit')?'set':'remove')+'Attribute']('contenteditable', '')), t.data=(bool?'done':'edit')+' '">edit <i class="fa fa-pen"></i></button></code><code class="sm:mr-3">
+<button class="-ml-2.5 tooltip px-2.5 rounded-full -m-1 hover:bg-blue-300 p-2 top-0 left-0 absolute text-current fa fa-trash" style="--tw-bg-opacity: 0.4; z-index:auto;" onclick="Abbr.to(this,'pN').remove()"></button><pre class="text-center text-lg text-red-200">#text</pre>
+<button class="font-mono text-left block focus:text-black focus:bg-blue-300 w-full text-current rounded-b-lg p-2 hover:bg-blue-300 hover:text-black relative ">codex <i class="fa fa-caret-down"></i><pre class="overflow-scroll rounded-lg text-black bg-blue-300 right-0 h-auto tooltip absolute p-2 bottom-8" style="max-height:220px;"><div><span style="background-color: rgba(147,197,253,var(--tw-bg-opacity)); color: rgba(0,0,0,var(--tw-text-opacity)); font-family: inherit; font-size: 1em;">function fxn(node, bool) {</span></div><div>/*the template script for</div><div>"img"beside ← has some</div><div>comments left out</div><div> here to avoid redundancy
+*/<br><div>/*only make edits from here on</div><div>for proper behaviour</div><div>*/
+  bool=node.nodeName==="#text"</div><div>  &&node.data;</div><div><br></div><div>  bool&&((page.data||={})
+    ['#texts']||=[])
+  .push(bool);</div><div><br></div><div>  /*moves over to the other
+    scripts if false
+   */
+  return bool;
+}</div></div></pre></button>
+<button class="mt-1 px-3 w-full text-sm ripple relative p-1.5 text-current rounded-b-lg border border-current border-dashed" onclick="let pres=Abbr.to(this,'pN').querySelectorAll('pre'), t=Abbr.to(this,'fC'), bool; pres.forEach(pre=>pre[((bool=t.data.trim()==='edit')?'set':'remove')+'Attribute']('contenteditable', '')), t.data=(bool?'done':'edit')+' '">edit <i class="fa fa-pen"></i></button></code></main></div><div class="w-full bottom-0 tooltip no-hover no-focus no-focus-within absolute -slide-y"><h3 class="text-base text-gray-300">Preview and cleanse the data</h3>
+
+<p class="p-1.5">Cleanse, preview the data scraped. Run custom scripts on it as well.</p>• Asset in scope: <code class="inline-block">page.data["<input class="align-bottom inline-block p-1 bg-transparent border-b border-current text-current" size="7" list="defaults" oninput="let data=page.data[this.value]; data&&(preview.value = (page.asset=data).join(' '))"><datalist id="defaults"></datalist>"]</code><div class="w-full items-center flex my-2 [&>*]:inline-block [&>*]:relative" onclick="let prop=Abbr.to(this,['pES','fEC']).value, t=event.target; if(t.tagName!=='BUTTON') return; Abbr.to(t,'cL').contains('border-current')&&[this.querySelector('button.border'), t].forEach((btn,i)=>Abbr.to(btn,'cL')[cLs(i)]('border')), Abbr.to(t,'tC')==='evaluate'&&page.data[prop]&&(preview.textContent=window.eval(Abbr.to(t,['pES','tC']).replace('[asset-in-scope]', `page.data['${prop}']`)))"><div class="flex-1">
+<button class="ripple relative w-full px-4 p-2 rounded-l-full border-current text-current border"><i class="fa fa-filter text-base"></i> <span class="pointer-events-none text-sm ml-2 tooltip no-hover no-focus no-focus-within slide base:show base:relative absolute" style="z-index:auto">filter</span></button>
+<aside class="rounded-xl text-black bg-blue-300 absolute tooltip to-top mb-1" style="left:unset; transform: unset; --arrow-size:8px; --arrow-x:-50px;">
+    <pre class="inline-block border border-gray-300 rounded-inherit bg-blue-200 shadow m-1 p-2.5 mb-2 whitespace-pre" contenteditable="" spellcheck="false">preview.value=<br style="border-color: rgba(229,231,235,var(--tw-border-opacity)); --tw-border-opacity: 1; --tw-shadow: 0 0 #0000; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(254 245 210); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000;">/*start of main code*/<div>[asset-in-scope]</div><div><span style="background-color: rgba(191,219,254,var(--tw-bg-opacity)); font-size: 1em; color: rgba(0,0,0,var(--tw-text-opacity));">.filter(e=>e.trim())</span><div></div><div>/*end of main code*/</div></div></pre>
+<button class="ripple relative bg-blue-400 float-right p-3 rounded-tl-xl">evaluate</button><div class="overflow-hidden border-t rounded-tr-2xl border-r border-current bottom-0 [&>*]:relative absolute inline-block left-0"><button class="hover:bg-blue-100 ripple px-5 text-xl fa fa-caret-up" onclick="Abbr.to(this,[{2:'pN'},'cL']).replace('to-bottom', 'to-top')"></button><br>
+<button class="hover:bg-blue-100 ripple px-5 text-xl fa fa-caret-down" onclick="Abbr.to(this,[{2:'pN'},'cL']).replace('to-top', 'to-bottom')"></button></div>
+</aside></div><div class="sm:w-full flex-1">
+<button class="rounded ripple relative w-full px-4 p-2 border-current text-current"><i class="fa fa-bullseye text-lg"></i> <span class="pointer-events-none ml-2 tooltip no-hover no-focus no-focus-within slide base:show base:relative absolute" style="z-index: auto;">unique</span></button><aside class="mb-1 rounded-xl text-black bg-blue-300 absolute tooltip to-top" style="--arrow-size:8px;">
+    <pre class="border border-gray-300 rounded-inherit bg-blue-200 shadow m-1 p-2.5 mb-2 whitespace-pre" contenteditable="" spellcheck="false">preview.value=<br style="border-color: rgba(229,231,235,var(--tw-border-opacity)); --tw-border-opacity: 1; --tw-shadow: 0 0 #0000; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(254 245 210); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000;">/*start of main code*/
+[...new Set([asset-in-scope])<div>/*end of main code*/<br></div></pre>
+<button class="ripple relative bg-blue-400 float-right p-3 rounded-tl-xl">evaluate</button><div class="overflow-hidden border-t rounded-tr-2xl border-r border-current bottom-0 [&>*]:relative absolute inline-block left-0"><button class="hover:bg-blue-100 ripple px-5 text-xl fa fa-caret-up" onclick="Abbr.to(this,[{2:'pN'},'cL']).replace('to-bottom', 'to-top')"></button><br>
+<button class="hover:bg-blue-100 ripple px-5 text-xl fa fa-caret-down" onclick="Abbr.to(this,[{2:'pN'},'cL']).replace('to-top', 'to-bottom')"></button></div>
+</aside></div><div class="flex-1">
+<button class="ripple relative w-full rounded-r-full px-4 p-2 border-current text-current"><i class="fa fa-equals text-base"></i> <span class="pointer-events-none text-sm ml-2 tooltip no-hover no-focus no-focus-within slide base:show base:relative absolute" style="z-index: auto;">modify</span></button><aside class="mt-1 right-0 rounded-xl text-black bg-blue-300 absolute tooltip to-top" style="left:unset; transform: unset; --arrow-size:8px; --arrow-x:80px;">
+    <pre class="border border-gray-300 rounded-inherit bg-blue-200 shadow m-1 p-2.5 mb-2 whitespace-pre inline-block" contenteditable="" spellcheck="false">preview.value=<div>/*start of main code*/<div><div>[asset-in-scope]</div><div><span style="background-color: rgba(191,219,254,var(--tw-bg-opacity)); font-size: 1em; color: rgba(0,0,0,var(--tw-text-opacity));">.filter(e=>Boolean(e))</span></div><div>/*end of main code*/</div></div></div></pre>
+<button class="ripple relative bg-blue-400 float-right p-3 rounded-tl-xl">evaluate</button><div class="rounded-bl-2xl overflow-hidden border-t rounded-tr-2xl border-r border-current bottom-0 [&>*]:relative absolute inline-block left-0"><button class="hover:bg-blue-100 ripple px-5 text-xl fa fa-caret-up" onclick="Abbr.to(this,[{2:'pN'},'cL']).replace('to-bottom', 'to-top')"></button><br>
+
+<button class="hover:bg-blue-100 ripple px-5 text-xl fa fa-caret-down" onclick="Abbr.to(this,[{2:'pN'},'cL']).replace('to-top', 'to-bottom')"></button></div>
+</aside></div></div><button class="ripple relative mr-1 px-5 rounded-tl-lg border-t p-3 border-l text-current" onclick="Abbr.to(this, [{2:'pN'},{2:'fEC'}]).click()"> Feed data to AI models<i class="ml-1 align-bottom inline-block fa fa-arrow-right text-lg"></i></button><textarea class="outline-none text-current p-2 rounded-bl-lg border-l border-b w-full bg-transparent" spellcheck="false" rows="3" id="preview"></textarea>
+Preview: <i>drag at bottom right to increase height</i>
+
+</div><!--end of sections for scraping data-->
+<aside class="mt-3 mb-16 relative">
+    <div class="h-full absolute overflow-hidden w-full">
+<aside class="sm:ml-12 -ml-12 [&>*]:relative left-0 -mt-1 right-0 top-1/4 whitespace-pre inline-block [&>*]:inline-block space-x-8 sm:space-x-16 [&>*]:p-xy absolute" style="--py: 3px; --px: 1.2em; animation: auto ease 0s 1 normal none running none;"><div class="bg-white"><i class="left-full -mt-2 top-0 absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div><div class="bg-white"><i class="left-full -mt-2 -top-px absolute text-2xl fa-caret-right fa"></i></div></aside></div><div class="items-center text-black relative flex left-0 right-0 justify-between [&>*]:relative" onclick="let t=event.target, chs=[].slice.call(Abbr.to(this,{2:'pN'}).children, 1, -1), btns=slice(this.querySelectorAll('button')), btn=btns.find(e=>relation(Abbr.to(e,'pN'),t)[0]||e===t), i=btns.indexOf(btn), cls=['show','absolute']; if(!btn||Abbr.to(btn,['pN','tN'])!=='SPAN') return; chs.forEach((e,_i,b)=>Abbr.to(e,'cL').replace(cls[+(b=i==_i)], cls[+!b])), [this.querySelector('button.bg-blue-300'), btn].forEach((bt,i, cl)=>{ cl=cLs(i), Abbr.to(bt,'cL')[cl]('bg-blue-300'), Abbr.to(bt,['nES','cL'])[cl]('show') })">
+  <span class="z-1">
+
+<button class="rounded-full ripple relative p-0 bg-blue-300"><i class="text-2xl font-sans fa fa-globe-africa p-2 inline-block rounded-full border-4 border-gray-300"></i></button><aside class="text-white -ml-2.5 mb-1.5 to-top tooltip absolute show" style="--arrow-size:10px;"></aside><aside class="font-normal text-sm font-sans bg-blue-300 p-2 mb-1.5 to-top tooltip absolute" style="--arrow-size:8px;">download the markup for a website</aside></span>
+
+<span class="z-1">
+<button class="rounded-full ripple relative p-0"><i class="border-4 text-2xl font-sans border-gray-300 fa fa-code p-2 inline-block rounded-full py-2.5"></i></button><aside class="text-white -ml-2.5 mb-2.5 to-top tooltip absolute" style="--arrow-size:10px;"></aside><aside class="font-normal text-sm font-sans bg-blue-300 p-2 -ml-3 mb-1.5 to-top tooltip absolute" style="--arrow-size:10px;">obtain information from DOM nodes conditionally via scripts. The scripts are silently ignored if erroneous.</aside></span><span>
+<button class="rounded-full ripple relative p-0"><i class="py-2.5 text-2xl font-sans border-gray-300 fa fa-broom p-2 inline-block rounded-full border-4"></i></button><aside class="text-white -ml-2.5 mb-2.5 to-top tooltip absolute" style="--arrow-size:10px;"></aside><aside class="font-normal text-sm font-sans bg-blue-300 p-2 -ml-2 mb-1.5 to-top tooltip absolute" style="--arrow-size:8px;">Preview, filter and cleanse the data</aside></span>
+<div class="text-center text-white border-dashed rounded-b-xl border-2 border-current p-1 left-5 right-1/2 border-t-0 top-3/4" style="position:absolute;">
+    <button class="inline-block m-auto ripple rounded-xl to-white text-black bg-gradient-to-br from-blue-400 top-0 p-3 relative" onclick="scrape.send.click()">scrape and apply scripts</button>
+</div></div>
+
+
+</aside>
+</section>
+<section class="md:mr-16 bottom-0 left-0 right-0 absolute md:relative md:show inline-block tooltip no-hover no-focus no-focus-within -slide-y"><div class="mr-20"><h2 class="mr-3 inline-block mb-4 text-lg">Feed AI models</h2><button class="ripple relative md:hidden text-current border-gray-300 border-l p-3" onclick="let sec=Abbr.to(this,{2:'pN'}), cls=['absolute', 'show']; [].forEach.call(Abbr.to(sec, 'pN').children, (ch, b)=>{ b=ch===sec, Abbr.to(ch,'cL').replace(cls[+b], cls[+!b]) })"><i class="fa fa-arrow-left"></i> back to scraping</button></div>
+<main class="mb-5"><section class="[&>*]:text-left text-center"><h3 class="text-base mb-1">Vectorize data into embeddings</h3>
+<p class="absolute base:show base:relative tooltip no-hover no-focus no-focus-within" style="z-index:auto">Choose a provider that has the AI model you want to use already running or stick with the fallback</p>
+<hr class="md:w-full w-2/3 border-0 p-px bulge-center">
+<datalist id="pgml"><option value="intfloat/e5-small-v2">384 dimensions</option><option value="mixedbread-ai/mxbai-embed-large-v1">1024 dimensions</option><option value="Alibaba-NLP/gte-base-en-v1.5">768 dimensions</option><option value="Alibaba-NLP/gte-large-en-v1.5">1024 dimensions</option></datalist>
+
+<datalist id="openai"><option value="text-embedding-ada-002">1536 dimensions</option><option value="text-embedding-3-large">3072</option><option value="text-embedding-3-small">1536 dimensions</option></datalist><datalist id="ollama"><option value="mxbai-embed-large">334 parameter size</option><option value="nomic-embed-text">137M parameter size</option><option value="all-minilm">23M parameter size</option></datalist><article class="sm:mx-auto -mx-1 align-middle inline-block rounded-lg [&>*]:rounded-inherit [&>*]:align-middle [&>*]:inline-block [&>*]:relative [&>*]:p-2 sm:mt-4" onclick="let list=['ollama', 'openai', 'pgml'], cls=['absolute','show'], btns=slice(this.querySelectorAll('button')), t=event.target, bool=btns.indexOf(t)===1; if(t.tagName!=='BUTTON') return; [t, this.querySelector('.bg-white')||t].forEach(btn=>Abbr.to(btn,'cL').toggle('bg-white')), Abbr.to(this, ['nES','fEC','cL']).replace(cls[+!bool], cls[+bool]), feed.model.setAttribute('list', list[btns.indexOf(t)])">
+<button class="z-1 ripple text-current mr-1 hover:bg-white" style="--tw-bg-opacity: 0.2; overflow: visible;" data-ripple-scale="0.2"><aside class="text-right rounded-lg pb-5 m-1.5 text-left p-2 bg-blue-300 text-black tooltip absolute bottom-0 left-0" style="z-index: auto;" data-ripple-scale="0.2" onclick="Abbr.to(this, 'pN').click()">
+    Provide a URL to a provider such as <a class="ripple relative my-0.5 border-current border-t border-b inline-block w-24" href="https://www.koyeb.com/deploy/ollama" target="_blank"><img src="img/koyeb.png" class="inline-block w-12"><strong>Koyeb</strong></a><div class="pl-1 float-right w-3/5">that has your Ollama AI model running
+</div></aside>
+
+<figure class="pointer-events-none">
+<img src="img/ollama.png" class="filter invert w-10 m-auto">
+<figcaption class="relative mt-1">Ollama</figcaption></figure></button><button class="ripple text-current hover:bg-white" style="--tw-bg-opacity: 0.2;">
+<figure class="pointer-events-none">
+<img src="img/openai.svg" class="filter invert w-14 m-auto p-0.5">
+<figcaption class="mt-1">OpenAI</figcaption></figure></button><aside class="mx-3 -mt-2 sm:-mt-6"><div class="m-auto py-7 w-0.5 bg-current"></div>
+<span>or</span>
+<div class="m-auto py-7 w-0.5 bg-current"></div></aside>
+<button class="ripple text-current hover:bg-white bg-white" style="--tw-bg-opacity: 0.2; overflow: visible;" data-ripple-scale="0.2"><aside class="bottom-full absolute pointer-events-none">fallback ↴</aside>
+
+<figure class="pointer-events-none">
+<img src="img/postgreml.svg" class="w-10 m-auto p-0.5">
+<figcaption class="mt-1">PostgresML</figcaption></figure></button>
+</article>
+
+
+<form id="feed" class="inline-block align-middle" onsubmit="event.preventDefault(); let body={model:this.model.value, input:preview.value}, notice=Abbr.to(this.send,['fEC','cL']), auth=`Bearer ${this.key.value}`.repeat(this.key.value), error; 
+notice.add('inset-0'), body=JSON.stringify(body), fetch(this.point.value, {
+  method:'POST', headers: { ...auth&&({ Authorization: auth }),  'content-type':'appplication/json' },
+  body
+})
+.then(res=>res.json())
+.then(json=>{
+    { error } = json;
+    if(error) return;
+    Abbr.to(embed,'cL').add('show'),
+    Abbr.to(embed,'lEC').textContent = page.embeddings = (json?.embeddings||json?.data[0]?.embedding).toString()
+}).catch(err=>error = err)
+.finally(_=>{ notice.remove('inset-0'), out.textContent=error })">
+<label class="ml-2 inline-block tooltip no-hover no-focus no-focus-within slide-y absolute">API_KEY: <input class="text-current bg-transparent p-2 border-b" name="key" type="password"><aside class="inline-block"><aside class="rounded-md right-0 w-2/3 tooltip absolute p-3 bottom-1 bg-blue-100 text-black" style="z-index:auto;">This API key will only be used in requests to OpenAI's servers. You can affirm this via the network tab in the browser devtools</aside><button class="rounded ripple relative rounded-tl-lg px-3 font-semibold text-lg p-0.5 bg-blue-300 text-blue-900" style="--tw-bg-opacity: 0.9;" type="button">!</button>
+</aside></label>
+
+<pre class="[&>*]:align-middle pl-3 whitespace-pre-wrap">URL:<input class="inline-block ml-2 text-current p-1.5 bg-transparent border-b mb-2" value="api/embed" required="" spellcheck="false" name="point"> {
+<label class="ml-4 inline-block mb-2">"model": <input class="text-current bg-transparent p-2 border-b align-bottom inline-block" list="pgml" spellcheck="false" required="" name="model"></label>
+}<div class="inline-block mr-3"><span class="ml-4">"prompt": </span><div class="inline-block border-dashed px-2 p-1 rounded-xl border-2 border-current">preview.value</div></div><button class="inline-block text-current border-l-2 border-r-2 p-2.5 ripple relative" name="send"><div class="absolute bg-blue-100 mix-blend-difference to-fro">
+</div>submit <i class="fa fa-arrow-right"></i>
+</button></pre></form>
+</section></main>
+<div class="tooltip -slide-y no-hover no-focus no-focus-within absolute bottom-0 right-4 -mb-4" id="embed"><button class="p-2 text-current rounded-t-2xl px-3 border-b-0 border"><i class="fa fa-caret-down"></i> page.embedding</button><button class="focus:bg-blue-100 mb-0.5 bg-blue-200 right-0 text-black bottom-full absolute p-3 rounded-b-xl px-4 tooltip" onclick="copyTextToClipboard(Abbr.to(this,['nES','tC']))">copy embedding</button>
+
+<code class="word-break text-center rounded-t-lg mb-11 overflow-y-scroll tracking-widest text-xs right-0 w-60 tooltip bottom-full absolute p-4 text-black bg-blue-200" style="max-height:45vh; z-index:auto"></code></div></section></main>
+<p class="pointer-events-none mx-5 bottom-0 m-2 truncate left-0 right-0 absolute" id="out">No errors</p>
+<button class="ripple rounded-tr-3xl bg-white p-4 sm:p-5 top-0 right-0 text-sm text-current absolute" onclick="Abbr.to(this,['pN','cL']).remove('show')" style="--tw-bg-opacity: 0.2;"><i class="fa fa-arrow-left"></i> exit</button></aside>
+</main>
+<script>
+page = {
+  asText: function(node, fn, txt='', _txt, cb, val) {
+    (cb=(nodes, flag, bool)=>slice(nodes).forEach((ch, res)=>{
+      res = ch.data || ch.value || '',
+      txt += bool = fn&&fn.call ? fn(ch) : res,
+      !bool&&ch.childNodes.length&&cb(ch.childNodes, !0)
+    }))(node.childNodes),
+    _txt = node.innerText,
+    val = _txt.length>txt.length ? txt : txt;
+    return txt;
+  }
+}
+DOMLoaded=0;
+function tagify(el, tag) {
+  typeof tag!=='string'&&(tag='span'),
+  el.innerHTML = el.textContent.split('').map(e=>`<${tag}>${e}</${tag}>`).join('')
+}
+  /*use heap as a global array of nodes that are modified and altered as an alternative to variables for the same purpose */
+let heap = [];
+  w_Ev_dom((rellax)=>{
+    DOMLoaded = true,
+    animations.addRippleAnimations()
+  })
+</script></body></html>

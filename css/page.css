@@ -1,19 +1,31 @@
 /* @import url("https://fonts.googleapis.com/css?family=Cabin"); */ 
-
+@font-face {
+  font-family: 'regular-bookweb';
+  src: url('../fonts/regular-bookweb.woff') format('woff');
+}
 @font-face {
     font-family: 'Fredoka';
     src: url('../fonts/font.woff2') format('woff2');
 }
-
+@font-face {
+    font-family: 'Departure';
+    src: url('../fonts/DepartureMono-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Capsmall clean';
+  src: url('../fonts/Capsmall_clean.woff') format('woff');
+}
+.font-caps {
+  font-family: 'Capsmall clean';
+}
+.font-departure {
+  font-family: 'Departure';
+}
 .font-fredoka {
     font-family: 'Fredoka';
 }
 .word-break {
 	word-wrap: break-word;
-}
-@font-face {
-    font-family: 'regular-bookweb';
-    src: url('../fonts/regular-bookweb.woff') format('woff');
 }
 [disabled] {
   cursor: not-allowed;
